@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaSLaunch — Next.js 16 SaaS Landing Page Template
 
-## Getting Started
+> **Purchased this template?** Download the full source from your Gumroad receipt and follow the Quick Start below.
+>
+> **Don't have it yet?** [Get it on Gumroad →](https://shipkitco.gumroad.com/l/rmwryv)
 
-First, run the development server:
+---
+
+A production-ready, dark-mode-first SaaS landing page built with Next.js 16 App Router, Tailwind CSS, shadcn/ui, and Framer Motion. 11 sections, fully responsive, ships in hours not weeks.
+
+---
+
+## What's included
+
+11 production-ready sections:
+
+| Section | Notes |
+|---|---|
+| Navbar | Dark/light mode toggle, mobile menu |
+| Hero | Live product screenshot carousel (auto-advance + keyboard nav) |
+| Social Proof | Logo marquee strip |
+| Feature Grid | Icon + copy cards |
+| Product Deep-Dive | Full-width feature walkthrough |
+| Stats | Animated counters on scroll |
+| Testimonials | Card grid with avatars |
+| Pricing | 3-tier table, monthly/annual toggle |
+| FAQ | Accordion |
+| CTA | Email capture with success state |
+| Footer | Links, social icons, copyright |
+
+---
+
+## Quick Start
+
+**Step 1 — Install dependencies**
+
+```bash
+npm install
+```
+
+**Step 2 — Run the dev server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Step 3 — Customize**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+See **[CUSTOMIZE.md](CUSTOMIZE.md)** for the full retheme guide. The three fastest wins:
 
-## Learn More
+- **Primary color** → `src/app/globals.css` → update `--primary`
+- **Brand name** → global find/replace `SaaSLaunch` → your product name
+- **Copy** → `src/app/page.tsx` → all section content in one file
 
-To learn more about Next.js, take a look at the following resources:
+**Step 4 — Deploy**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+vercel deploy
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vercel detects Next.js automatically. For Netlify/Render/Railway: build command `npm run build`, output `.next`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## AI Prompts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The `ai-prompts/` folder has 6 prompts for generating section copy with Claude or ChatGPT:
+
+| File | Generates |
+|---|---|
+| `01-rebrand.md` | Full rebrand plan |
+| `02-copy-rewrite.md` | Section copy for your product |
+| `03-generate-testimonials.md` | Testimonial cards |
+| `04-pricing-tiers.md` | Pricing tier names, features, copy |
+| `05-faq.md` | FAQ questions and answers |
+| `06-add-section.md` | New section component code |
+
+---
+
+## Tech Stack
+
+- **Framework** — Next.js 16 App Router
+- **Styling** — Tailwind CSS + shadcn/ui
+- **Animations** — Framer Motion
+- **Fonts** — Geist (via `next/font`)
+- **Icons** — Lucide React
+- **Deploy** — Vercel (zero config)
+
+---
+
+## Support
+
+- **Customization:** [CUSTOMIZE.md](CUSTOMIZE.md)
+- **Bugs:** [Open an issue](https://github.com/ShipKitCo/saaslaunch-nextjs/issues)
+- **Purchase support:** Reply to your Gumroad receipt email
+
+---
+
+Made by [ShipKitCo](https://shipkitco.gumroad.com)
